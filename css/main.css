@@ -1,3 +1,36 @@
 html {
   font-family: "Unica One", sans-serif;
 }
+
+h1 {
+  color: #fff;
+  position: absolute;
+  left: 60px;
+  top: 170px;
+  z-index: 10;
+  max-width: 350px;
+  animation: fade-in 1s ease forwards;
+}
+
+h2 {
+  color: #fff;
+  position: absolute;
+  left: 60px;
+  top: 250px;
+  z-index: 10;
+  max-width: 350px;
+  animation: fade-in 1s ease forwards;
+}
+
+@keyframes fade-in {
+
+  0% {
+    filter: blur(10px);
+    opacity: .5;
+  }
+
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
