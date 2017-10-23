@@ -34,3 +34,91 @@ h2 {
     opacity: 1;
   }
 }
+
+#rainbow-violet {
+  stroke-dasharray: 10000px;
+  stroke-dashoffset: 10000px;
+  animation: rainbow-move 3s linear forwards;
+}
+
+#rainbow-indigo {
+  stroke-dasharray: 10000px;
+  stroke-dashoffset: 10000px;
+  animation: rainbow-move 3s linear forwards;
+}
+
+#rainbow-blue {
+  stroke-dasharray: 10000px;
+  stroke-dashoffset: 10000px;
+  animation: rainbow-move 3s linear forwards;
+}
+
+#rainbow-green {
+  stroke-dasharray: 10000px;
+  stroke-dashoffset: 10000px;
+  animation: rainbow-move 3s linear forwards;
+}
+
+#rainbow-yellow {
+  stroke-dasharray: 10000px;
+  stroke-dashoffset: 10000px;
+  animation: rainbow-move 3s linear forwards;
+}
+
+#rainbow-orange {
+  stroke-dasharray: 10000px;
+  stroke-dashoffset: 10000px;
+  animation: rainbow-move 3s linear forwards;
+}
+
+#rainbow-red {
+  stroke-dasharray: 10000px;
+  stroke-dashoffset: 10000px;
+  animation: rainbow-move 3s linear forwards;
+}
+
+#narwhal-body {
+  stroke-dasharray: 1970px;
+  stroke-dashoffset: 1970px;
+  animation: narwhal-appear 1s linear forwards;
+}
+
+#narwhal-eye {
+  opacity: 0;
+  animation: come-in 1s linear forwards;
+}
+
+@keyframes rainbow-move {
+
+  0% {
+    stroke-dashoffset: 10000px;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes narwhal-appear {
+
+  0% {
+    stroke-dashoffset: 1970px;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes come-in {
+
+  0% {
+    opacity: 0;
+    filter: blur(3px);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
